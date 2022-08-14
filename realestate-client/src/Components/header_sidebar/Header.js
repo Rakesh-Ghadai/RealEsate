@@ -24,7 +24,7 @@ const Header = () =>{
                 
                     axios({
                         method: 'get',
-                        url:"http://localhost:5000/property",
+                        url:"https://real-estate-10x-server.herokuapp.com/property",
                         headers: {
                             Accept : "application/json",
                             authorization: token,

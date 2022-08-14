@@ -37,7 +37,7 @@ export default function Signup() {
     const userSignup = ()=>{
       axios({
         method : 'post',
-        url: "http://localhost:5000/signup",
+        url: "https://real-estate-10x-server.herokuapp.com/signup",
         data : signupDetails
 
       }).then((response)=>{

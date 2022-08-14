@@ -48,7 +48,7 @@ else if(random_string==="Unsold")
         const sendData = ()=>{
             axios({
                 method : 'post',
-                url : 'http://localhost:5000/addproperty', 
+                url : 'https://real-estate-10x-server.herokuapp.com/addproperty', 
                 headers: {
                     Accept : "application/json",
                     authorization: token,

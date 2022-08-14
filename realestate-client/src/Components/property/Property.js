@@ -50,7 +50,7 @@ const Property = () =>{
             // axios.get("http://localhost:5000/property")
              axios({
                 method: 'get',
-                url:"http://localhost:5000/property",
+                url:"https://real-estate-10x-server.herokuapp.com/property",
                 headers: {
                     Accept : "application/json",
                     authorization: token,
@@ -84,7 +84,7 @@ const Property = () =>{
             console.log("Inside afterLogin function property.js useEffect")
                 axios({
                     method: 'get',
-                    url:"http://localhost:5000/property",
+                    url:"https://real-estate-10x-server.herokuapp.com/property",
                     headers: {
                         Accept : "application/json",
                         authorization: token,
@@ -95,7 +95,9 @@ const Property = () =>{
                     console.log("Inside then block of property.js")
                     // console.log(res.data.userData[0]._id)
                     // console.log(res.data.property)
-                    setUsers(res.data.property)
+                    console.log(res);
+                    setUsers(res.data.property);
+                    console.log(users)
                 }).catch((err)=>{
                     console.log("Inside catch block of property.js")
                     console.log(err)

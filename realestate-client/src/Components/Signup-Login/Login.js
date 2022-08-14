@@ -29,7 +29,7 @@ export default function Login() {
     const userLogin = ()=>{
       axios({
         method : 'post',
-        url: "http://localhost:5000/login",
+        url: "https://real-estate-10x-server.herokuapp.com/login",
         data : loginDetails
 
       }).then((response)=>{
